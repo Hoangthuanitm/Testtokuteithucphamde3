@@ -241,7 +241,7 @@
             const historyTableBody = document.getElementById('history-table-body');
             const messageDiv = document.getElementById('message');
             let testHistory = [];
-            const collectionName = 'testHistorytokuteithucphamde1';
+            const collectionName = 'testHistorytokuteithucphamde3';
 
             if (!db) {
                 messageDiv.textContent = 'Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra cấu hình Firebase.';
@@ -249,7 +249,7 @@
             }
 
             try {
-                // Fetch data from testHistorytokuteithucphamde1
+                // Fetch data from testHistorytokuteithucphamde3
                 const snapshot = await getDocs(collection(db, collectionName));
                 testHistory = snapshot.docs.map(doc => ({
                     id: doc.id,
